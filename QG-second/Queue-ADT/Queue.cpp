@@ -1,6 +1,11 @@
 #include"AQueue.h"
 #include<stdio.h>
 #include<stdlib.h>
+
+//自己写的头文件，师兄快夸夸我 
+
+
+//初始化队列 
 void InitAQueue(AQueue* Q)
 {
     int i;
@@ -13,6 +18,7 @@ void InitAQueue(AQueue* Q)
     printf("\n队列创建成功！\n");
 }
 
+//销毁队列 
 void DestoryAQueue(AQueue* Q)
 {
     if (Q->data[0] == NULL)
@@ -28,6 +34,7 @@ void DestoryAQueue(AQueue* Q)
     }
 }
 
+//判断队列满了吗 
 Status IsFullAQueue(const AQueue* Q)
 {
     if (Q->data[0] == NULL)
@@ -49,6 +56,7 @@ Status IsFullAQueue(const AQueue* Q)
     }
 }
 
+//判断队列是否为空 
 Status IsEmptyAQueue(const AQueue* Q)
 {
     if (Q->data[0] == NULL)
@@ -66,6 +74,7 @@ Status IsEmptyAQueue(const AQueue* Q)
     }
 }
 
+//获得队头元素 
 Status GetHeadAQueue(AQueue* Q)
 {
     if (Q->data[0] == NULL)
@@ -91,6 +100,8 @@ Status GetHeadAQueue(AQueue* Q)
     }
 }
 
+
+//获得队列长度 
 void LengthAQueue(AQueue* Q)
 {
     if (Q->data[0] == NULL)
@@ -104,6 +115,7 @@ void LengthAQueue(AQueue* Q)
     }
 }
 
+//入队 
 Status EnAQueue(AQueue* Q, void* data,int s)
 { 
     if(Q->length==0)
@@ -127,6 +139,7 @@ Status EnAQueue(AQueue* Q, void* data,int s)
     }
 }
 
+//出队 
 Status DeAQueue(AQueue* Q)
 {
     if (Q->data[0] == NULL)
@@ -148,6 +161,7 @@ Status DeAQueue(AQueue* Q)
     }
 }
 
+//清空队列 
 void ClearAQueue(AQueue* Q)
 {
     if (Q->data[0] == NULL)
@@ -167,6 +181,7 @@ void ClearAQueue(AQueue* Q)
     }
 }
 
+//遍历队列并打印 
 Status TraverseAQueue(const AQueue* Q)
 {
     if (Q->data[0] == NULL)
@@ -198,6 +213,7 @@ Status TraverseAQueue(const AQueue* Q)
     }
 }
 
+//输入限制模块：最最最重要的模块，抵挡师兄的第一道防线，也是最后一道（-——-） 
 void checkinput(int* r) {
     int error, i = 0;
     char c[50] = { 0 };
@@ -219,6 +235,8 @@ void checkinput(int* r) {
     *r = atoi(c);
 }
 
+
+//选择师兄心仪的类型 
 void CheckType(AQueue* Q) {
     printf("\t\t\t|--------------------------------|\n");
 
@@ -279,9 +297,7 @@ void CheckType(AQueue* Q) {
     return;
 }
 
-#include"AQueue.h"
-#include<stdio.h>
-#include<stdlib.h>
+//操作面板模块（主函数） 
 int main() {
 	int num = 0;
 	AQueue* Q = (AQueue*)malloc(sizeof(AQueue));
@@ -290,7 +306,7 @@ int main() {
 	while (1) {
 		system("cls");
 		printf("\t\t\t|----------------------------------|\n");
-		printf("\t\t\t|         循环队列基本操作         |\n");
+		printf("\t\t\t|        链式储存泛型循环队列      |\n");
 		printf("\t\t\t|----------------------------------|\n");
 		printf("\t\t\t|      1---建立队列                |\n");
 		printf("\t\t\t|      2---销毁队列                |\n");
@@ -304,7 +320,7 @@ int main() {
 		printf("\t\t\t|      10---遍历打印队列           |\n");
 		printf("\t\t\t|      11---退出                   |\n");
 		printf("\t\t\t|----------------------------------|\n");
-		printf("\t\t\t|                 前端-Sheldonlee  |\n");
+		printf("\t\t\t|    QG-STUDIO Bootcamp——蒋卓然造|\n");
 		printf("\t\t\t|----------------------------------|\n");
 		printf("\n请选择操作:\n");
 		checkinput(&num);

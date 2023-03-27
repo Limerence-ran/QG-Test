@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include "LinkStack.h"
 
+//没错，又是自己写的头文件，哈哈哈 
+
 // LinkStack.
 
 StackNode *bottom = NULL;
