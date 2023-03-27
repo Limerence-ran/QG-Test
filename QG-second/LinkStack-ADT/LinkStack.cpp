@@ -145,16 +145,16 @@ Status printStack(LinkStack * s)
 // 输入整数检测
 int InputNumber()
 {
-	int num = 0; // Store converted numbers.
-	int status = 0; // Flag status.
-	char str[100]; // Receive string.
+	int num = 0; // 存储转换后的数字.
+	int status = 0; // 标记状态
+	char str[100]; // 接收字符串
 	do
 	{
 		scanf("%s", str);
 		status = SUCCESS;
 		for (int i = 0; str[i] != '\0'; i++)
 		{
-			// Check for illegal characters.
+			// 检查违法的字符串
 			if (i == 0)
             {
 				if (str[i] == '-' || str[i] == '+')
@@ -174,7 +174,7 @@ int InputNumber()
 		else
 		{
 			int i = 0;
-			// Convert string to number.
+			// 字符串转换为数字
 			for (i = 0, num = 0; str[i] != '\0'; i++)
 			{
 				if (i == 0)
@@ -199,7 +199,7 @@ int InputNumber()
             {
 				num = -num;
 			}
-			// Check if the number entered is out of bounds.
+			// 检查输入的数字是否越界
 			if (i >= 10)
 			{
 				printf("Overflow, please input again:");
@@ -213,7 +213,7 @@ int InputNumber()
 
 int main()
 {
-    int flag = 0; // There is no stack.
+    int flag = 0; // 无栈
     LinkStack *head = (LinkStack*)malloc(sizeof(StackNode));
     head->count = 0;
     head->top = NULL;
