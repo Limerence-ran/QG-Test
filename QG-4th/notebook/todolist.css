@@ -1,0 +1,114 @@
+    button {
+      cursor: pointer;
+    }
+ 
+    input {
+      outline: none;
+      background-color: antiquewhite;
+      border: none;
+      border-radius: 3px;
+      width: 250px;
+      height: 30px;
+      margin: 15px;
+    }
+ 
+    input::-webkit-input-placeholder {
+      color: #999;
+    }
+ 
+    /* 解决li前面的点删除后还占空间的问题 */
+    ul {
+      padding: 0;
+      margin: 0;
+    }
+ 
+    ul>li {
+      list-style: none;
+    }
+ 
+    .border {
+      width: 500px;
+      background-color: #999;
+      border-radius: 20px;
+      margin: auto;
+      padding-bottom: 20px;
+    }
+ 
+    .border .title {
+      font-size: 24px;
+      color: aliceblue;
+      line-height: 50px;
+      text-align: center;
+    }
+ 
+    .form {
+      width: 80%;
+      margin: 15px auto;
+    }
+ 
+    .form #add {
+      width: 100px;
+      height: 30px;
+      border-radius: 5px;
+      border: 0;
+      font-weight: 600;
+      font-size: 16px;
+      color: #999;
+      letter-spacing: 6px;
+    }
+ 
+    /* 每一条li，代表每一条事件 */
+    .item {
+      display: flex;
+      justify-content: space-between;
+      line-height: 30px;
+      font-size: 14px;
+      color: rgb(75, 73, 73);
+      padding: 5px 0;
+      border-bottom: 1px solid white;
+    }
+ 
+    .item .info {
+      margin-left: 10px;
+    }
+ 
+    .list .item .edit,
+    .fin,
+    .del {
+      width: 50px;
+      height: 30px;
+      border: 0;
+      border-radius: 5px;
+      color: white;
+    }
+ 
+    .edit {
+      background-color: #337ab7;
+    }
+ 
+    .fin {
+      background-color: #20c248;
+    }
+ 
+    .del {
+      background-color: #d9534f;
+    }
+ 
+    .btn {
+      display: inline-block;
+      width: 180px;
+      margin-right: 0;
+    }
+ 
+    /* 点击完成按钮后所添加的新类名finished */
+    .finished {
+      color: rgb(112, 110, 110);
+      background-color: rgb(197, 190, 190);
+      border-radius: 3px
+    }
+ 
+    .finished>.info {
+      /* 为文字添加删除线 */
+      text-decoration: line-through;
+    }
+ 

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的备忘录</title>
+  <link rel="stylesheet" href="todolist.css">
+</head>
+ 
+<body>
+  <!-- 备忘录外层边框 -->
+  <div class="border">
+    <!-- 标题 -->
+    <div class="title">QG-TodoList</div>
+    <hr>
+    <!-- 输入框和按钮 -->
+    <div class="form">
+      <input type="text" name="text" placeholder="请填写您的事件">
+      <button id="add">添加</button>
+    </div>
+ 
+    <!-- 备忘录事件列表 -->
+    <div
+      style="width: 94%;margin: auto;border-radius: 3px;box-shadow: 2px 2px rgb(119, 115, 115);background-color: rgb(214, 219, 219);">
+      <ul class="list">
+        <li class="item">
+          <!-- 事件区域 -->
+          <span class="info">QG-TodoList</span>
+          <!-- 按钮区域 -->
+          <div class="btn">
+            <button class="edit">编辑</button>
+            <button class="fin">完成</button>
+            <button class="del">删除</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+<script type="text/javascript" src="todolist.js"></script>
+</html>
