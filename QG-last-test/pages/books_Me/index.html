@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../reset.css">
+  <link rel="stylesheet" href="index.css">
+  <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+  <!-- 加载动画 -->
+  <div class="loader" id="loading">
+    <div>
+      <ul>
+        <li>
+          <svg fill="currentColor" viewBox="0 0 90 120">
+            <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+          </svg>
+        </li>
+        <li>
+          <svg fill="currentColor" viewBox="0 0 90 120">
+            <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+          </svg>
+        </li>
+        <li>
+          <svg fill="currentColor" viewBox="0 0 90 120">
+            <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+          </svg>
+        </li>
+        <li>
+          <svg fill="currentColor" viewBox="0 0 90 120">
+            <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+          </svg>
+        </li>
+        <li>
+          <svg fill="currentColor" viewBox="0 0 90 120">
+            <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+          </svg>
+        </li>
+        <li>
+          <svg fill="currentColor" viewBox="0 0 90 120">
+            <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+          </svg>
+        </li>
+      </ul>
+    </div>
+    <span>Loading</span>
+  </div>
+  <div id="mask"></div>
+  <!-- QG图片 -->
+  <header><!-- QG图片 -->
+    <div class="QG-icon">
+      <a href="javascript:void(0);">
+        <img src="../../assets/QG.png" alt="QG">
+        <button data-text="Awesome" class="button-text">
+          <span class="actual-text">&nbsp;QG:studio&nbsp;</span>
+          <span class="hover-text" aria-hidden="true">&nbsp;QG:studio&nbsp;</span>
+      </button>
+      </a>
+    </div>
+  </header>
+  <!-- tab栏切换 -->
+  <!-- tab栏导航模块 -->
+  <div class="container">
+
+      <ul class="sidebar">
+        
+        <li data-id="content-1">我的图书</li>
+        <li data-id="content-2">更改密码</li>
+        <li data-id="content-3">图书上传</li>
+        <li data-id="content-4">举报反馈</li>
+      </ul>
+      
+    <div class="content">
+      <!-- 内容一：我的图书 -->
+      <div class="item" data-id="content-1">内容1</div>
+
+      <!-- 内容二：修改密码 -->
+      <div class="item" data-id="content-2">
+        <div id="password-div">
+        <form id="password-form" onsubmit="updatePassword(event)">
+          <ul class="wrapper">
+
+            <li>
+          <input type="password" id="old-password" name="old-password" placeholder="old-password" class="input-password" required>
+            </li>
+            <li>
+          <input type="password" id="new-password" name="new-password" placeholder="new-password" class="input-password" required>
+            </li>
+            <li>
+          <input type="password" id="confirm-new-password" name="confirm-new-password" placeholder="confirm-new-password" class="input-password" required>
+            </li>
+
+            <li><button type="submit" class="button-password">修改密码</button></li>
+          </ul>"
+        </form>
+      </div>
+    </div>
+
+      <!-- 内容三：图书上传 -->
+      <div class="item" data-id="content-3">
+        <!-- 动画框 -->
+        <div class="card">
+        <!-- 大盒子 -->
+          <div>
+            <form id="upload-form" >
+        <!-- 小盒子 -->
+        <div class="son-div">
+              <!-- 申请人个人信息 -->
+              <div>
+                <input type="text" id="name" name="name" class="form--input" placeholder="Author-Name" required>
+              </div>
+              <div>
+                <input type="text" id="phone" name="phone" pattern="\d{11}"  class="form--input" placeholder="Author-Phone" required>
+              </div>
+
+        <!-- 书籍信息 -->
+              <div>
+                <input type="text" id="title" name="title" class="form--input" placeholder="Book-Name" required>
+              </div>
+        </div>
+        <!-- 小盒子 -->
+              <!-- 书籍介绍 -->
+              <div>
+                <textarea id="description" name="description" rows="4"  class="form--input" placeholder="Book-Description" required></textarea>
+              </div>
+            
+        <!-- 小盒子 -->
+        <div class="son-div">
+        <!-- 小小盒子 -->
+        <div class="img-text-y">
+        <!-- 图片上传 -->
+              <div class="form-img">
+                  <span class="form-title">封面</span>
+                  <p class="form-paragraph">
+                      File should be an image
+                    </p>
+                  <label for="file-input" class="drop-container">
+                  <span class="drop-title">Drop File Here</span>
+                  or
+                  <input type="file" accept="image/*" required="" class="form--input" id="file-img-input-1">
+                </label>
+
+                <!-- 按钮 -->
+                <button class="button_reset" type="reset">
+                  <span class="button_lg">
+                      <span class="button_sl"></span>
+                      <span class="button_text">取消上传</span>
+                  </span>
+              </button>
+              </div>
+        <!-- 文件上传 -->
+              <div class="form-img">
+                <span class="form-title">内容</span>
+                <p class="form-paragraph">
+                    File should be an text
+                  </p>
+                <label for="file-input" class="drop-container">
+                <span class="drop-title">Drop File Here</span>
+                or
+                <input type="file" accept="text/*" required="" id="file-img-input-2" class="form--input">
+                </label>
+                <button class="button_reset" type="reset">
+                  <span class="button_lg">
+                      <span class="button_sl"></span>
+                      <span class="button_text">取消上传</span>
+                  </span>
+                </button>
+              </div>
+        </div>
+
+        <!-- 小小盒子 -->
+        <div class="img-text-x">
+        
+        <!-- 出版社 -->
+                <div>
+                  <input type="text" id="publisher" name="publisher" class="form--input" placeholder="Publisher" required>
+                </div>
+        <!-- 出版日期 -->
+                <div>
+                  <input type="date" id="publish-time" name="publisher"  class="form--input" placeholder="Publish-Time" required>
+                </div>
+        <!-- 书籍分类及标签信息 -->
+              <div>
+                <select id="category" name="category"  class="form--input" title="分类" required>
+                  <option value="">请选择</option>
+                  <option value="言情">言情</option>
+                  <option value="女性">女性</option>
+                  <option value="悬疑">悬疑</option>
+                  <option value="科幻">科幻</option>
+                  <option value="文艺">文艺</option>
+                  <option value="历史">历史</option>
+                  <option value="同人">同人</option>
+                  <option value="非小说">非小说</option>
+                </select>
+              </div>
+        <!-- 标签 -->
+              <div>
+                <input type="text" id="tags" name="tags" class="form--input" placeholder="Tags">
+              </div>
+            
+        <!-- 同意协议 -->
+            <div class="form--marketing">
+                <input id="okayToEmail" type="checkbox" >
+                <label for="okayToEmail" class="checkbox">
+                  I agree to QG-User-Agreement.
+                </label>
+            </div>
+        <!-- 提交按钮 -->
+                <div>
+                  <button type="submit" class="form--submit">提交</button>
+                </div>
+              </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- 内容四：举报反馈 -->
+      <div class="item" data-id="content-4">内容4</div>
+    </div>
+  </div>
+  
+
+
+
+<!-- 我的图书模块 -->
+
+<!-- 举报反馈模块 -->
+
+</div>
+</body>
+</html>
