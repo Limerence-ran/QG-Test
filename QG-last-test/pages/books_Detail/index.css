@@ -1,11 +1,736 @@
-/* 加载动画 */
+a {
+  color:#389eac;
+  text-decoration: none;
+  cursor: pointer;
+}
 
-/* 图书封面 */
+.link, .link:hover, a, a:hover {
+  text-decoration: none;
+}
 
-/* 图书信息 */
+.article-profile-primary {
+  display: flex;
+  padding-bottom: 13px;
+  width: 1000px;
+  margin: 100px 200px 30px 240px;
+}
 
-/* 管理员的删除权限  */
+.article-profile-primary .cover {
+  margin-right: 20px;
+  width: 140px;
+  height: 209px;
+  flex-shrink: 0;
+}
 
-/* 收藏书架 */
+.article-cover {
+  float: left;
+  margin-right: 20px;
+  width: 140px;
+  height: 200px;
+  position: relative;
+  border-radius: 20px;
+  background: url(https://static.arkread.com/ark/pics/app/default-cover.c6741b44.png) center center/100% auto;
+}
+.article-shadow-cover {
+  box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.2);
+  position: relative;
+}
 
-/* 评论区*/
+.article-cover img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  opacity: 1;
+  transition: opacity .5s ease-in;
+  max-width: 100%;
+  border: none;
+  vertical-align: middle;
+}
+
+.article-profile-primary .article-profile-bd {
+  flex-grow: 1;
+}
+
+.article-title {
+  color:#333;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.app-article p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+.article-meta {
+  margin-top: 8px;
+}
+
+meta, link {
+  display: none;
+}
+
+.article-meta p {
+  line-height: 1.5;
+}
+
+.app-article .article-label {
+  margin-right: 5px;
+  color:#777;
+}
+
+.article-profile-primary .article-label, .article-profile-primary .article-labeled-text {
+  font-size: 12px;
+}
+
+.article-labeled-text .author-item {
+  display: inline-block;
+  margin: 0 5px 0 0;
+  line-height: 1.2;
+}
+
+.app-article p {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.app-article .article-label {
+  margin-right: 5px;
+}
+
+.article-profile-section .rating{
+  margin-top: 11px;
+  border-top: none;
+}
+
+.rating-light div span{
+  margin:0 -4px;
+  vertical-align:middle;
+}
+
+#score-amount span{
+  font-size: 6px;
+  line-height: 250%;
+}
+
+
+.rating .score, .rating-light .score {
+  color: #fa595f;
+}
+.rating .score, .rating-light .score, .rating .no-rating, .rating-light .no-rating {
+  margin: 0 0 0 7px;
+}
+
+.rating .no-rating, .rating-light .no-rating, .rating .amount, .rating-light .amount {
+  color: gray;
+}
+.rating .amount, .rating-light .amount {
+  margin-left: 7px;
+}
+
+#span-after-store{
+  display: none;
+}
+
+.article-profile-primary .book-rating {
+  float: right;
+  margin-top: -25px;
+  transform: translateX(-22.5px);
+}
+
+.book-rating {
+  position: relative;
+  display: inline-block;
+  padding: 0 4px 0 20px;
+  height: 20px;
+  border-radius: 2px;
+  background: url(https://static.arkread.com/ark/pics/mod/douban-star.5c7a4c9e.svg) no-repeat 4px 4px;
+  background-color: #fff;
+  color: gray;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.book-rating .score {
+  margin-right: 6px;
+  color: #42bd56;
+}
+
+.book-rating > span {
+  display: inline-block;
+  transform: translateY(.5px);
+}
+
+.book-rating .division {
+  display: inline-block;
+  margin: 0 6px;
+  width: 1px;
+  height: 12px;
+  background: gray;
+  vertical-align: -2px;
+  transform: scaleX(.5);
+}
+
+.reading-actions .membership-promotion-bar {
+  display: table;
+  margin-bottom: 20px;
+}
+
+.reading-actions .membership-promotion-bar a {
+  color: #333;
+}
+.membership-promotion-bar .membership-link {
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+
+.membership-promotion-bar .icon-vip, .membership-promotion-bar .icon-vip-added {
+  width: 20px;
+  height: 15px;
+  margin-right: 5px;
+  background: url(https://static.arkread.com/ark/pics/common/icon-vip.a9ded6a3.svg) no-repeat center/contain;
+}
+
+.membership-promotion-bar .promotion-text {
+  flex: 1;
+  color: #333;
+  font-size: 12px;
+  line-height: normal;
+}
+
+.membership-promotion-bar .icon-next {
+  width: 6px;
+  height: 11px;
+  margin-left: 5px;
+  background: url(https://static.arkread.com/ark/pics/common/icon-arrow-right-blueblack.1c34a85b.svg);
+}
+
+i{
+  font-style: italic;
+}
+
+.membership-promotion-bar .icon-next {
+  width: 6px;
+  height: 11px;
+  margin-left: 5px;
+  background: url(https://static.arkread.com/ark/pics/common/icon-arrow-right-blueblack.1c34a85b.svg);
+}
+
+.reading-actions .share-popup-wrapper {
+  float: right;
+  margin-top: 3px;
+}
+
+.share-popup-wrapper {
+  height: 32px;
+  border-radius: 2px;
+  background: #fff;
+  box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.1);
+  color:#333;
+  font-size: 13px;
+}
+
+.share-popup-wrapper .btn-rec {
+  display: inline-block;
+  padding: 0 12px;
+  height: 32px;
+  vertical-align: top;
+  line-height: 32px;
+}
+
+.share-popup-wrapper a, .share-popup-wrapper a:hover {
+  background-color: transparent;
+  color: #333;
+}
+
+.share-popup-wrapper .icon-arrow-down {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 32px;
+  background: none !important;
+  vertical-align: top;
+  line-height: 32px;
+}
+
+.share-popup-wrapper .icon-arrow-down::before {
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-left: 1px solid #ddd;
+  transform: scaleX(.5);
+  transform-origin: 0 0;
+}
+
+.share-popup-wrapper .icon-arrow-down::before {
+  position: absolute;
+  content: '';
+}
+
+.share-popup-wrapper .icon-arrow-down::after {
+  width: 6px;
+  height: 11px;
+  background: url(https://static.arkread.com/ark/pics/common/icon-arrow-right-blueblack.1c34a85b.svg) no-repeat center/6px 11px;
+  content: '';
+  transform: rotate(90deg);
+}
+
+.share-bubble-wrapper {
+  position: absolute;
+  z-index: 90;
+  display: block;
+  margin-top: -16px;
+  padding-top: 16px;
+}
+
+.reading-actions #add-to-bookshelf-button-root .btn-bookshelf:not(.is-in-library) {
+  border-radius: 2px;
+  background: #fff;
+  box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+.reading-actions #add-to-bookshelf-button-root .btn-bookshelf {
+  float: right;
+  margin: 3px 6px 0 0;
+  padding: 0 12px;
+  color: #333;
+  font-size: 13px;
+  line-height: 32px;
+}
+
+.reading-actions #add-to-bookshelf-button-root svg {
+  margin-right: 8px;
+  vertical-align: -5px;
+}
+
+.reading-actions #add-to-bookshelf-button-root .btn-text:not(.is-in-library)::after {
+  content: "加入书架";
+}
+
+.profile-purchase-actions .icon-buy, .profile-purchase-actions .icon-add-to-bookshelf {
+  vertical-align: -4px;
+  transform: translateY(.5px);
+}
+.profile-purchase-actions .icon-buy, .profile-purchase-actions .icon-add-to-bookshelf {
+  width: 17px;
+  height: 20px;
+  background-image: url(https://static.arkread.com/ark/pics/store/profile/purchase-blue.232e4c04.png);
+  background-position: top left;
+  background-size: 17px 20px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.profile-purchase-actions .action-button .btn-text {
+  margin-left: 4px;
+}
+
+.profile-purchase-actions.not-owned .cart-button .btn-text, .profile-purchase-actions.not-owned .gift-button .btn-text {
+  display: none;
+}
+
+.profile-purchase-actions .action-button .btn-text {
+  margin-left: 4px;
+}
+
+.cssbuttons-io-button {
+  background: #A370F0;
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #714da6;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+}
+
+.cssbuttons-io-button .read-icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .read-icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .read-icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #7b52b9;
+}
+
+.cssbuttons-io-button:hover .read-icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .read-icon {
+  transform: scale(0.95);
+}
+
+
+/* 你的评价*/
+.comment-area{
+    padding-bottom: 13px;
+    width: 1000px;
+    margin: 100px 200px 100px 240px;
+    font-size: 10px;
+}
+
+.stars--rgeYw {
+  height: 10px;
+  font-size: 10px;
+  line-height: 1;
+}
+
+.iconStar--kRBeR .nolast {
+  margin-right: calc((10px / 5));
+}
+
+.iconStar--kRBeR .active--jmSmb {
+  color: #f9c300;
+}
+
+.iconStar--kRBeR {
+  width: 10px;
+  height: 10px;
+  color: #ddd;
+}
+
+#review-section-root {
+  margin-bottom: 20px;
+}
+
+.reviewSection--Zk8tt {
+  position: relative;
+  padding: 10px 0;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+.reviewButton--TZ_1m {
+  display: block;
+  margin-left: 400px;
+  color: gray;
+  font-size: 8px;
+}
+
+.stars--tDYco {
+  margin-left: 5px;
+}
+
+.rating--S8Tkf {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 10px;
+  line-height: 1;
+}
+
+.input--i4WYa {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  bottom: 0;
+  left: -20px;
+  box-sizing: border-box;
+  padding: 0 !important;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.stars--rgeYw {
+  height: 10px;
+  font-size: 10px;
+  line-height: 1;
+}
+
+.reviewSection--Zk8tt::after {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  border-bottom: 1px solid #777;
+  transform: scaleY(.5);
+  transform-origin: 0 bottom;
+  position: absolute;
+  content: '';
+}
+
+/* 评论区 */
+.comment-area{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #777;
+}
+
+.card {
+  width: 1040px;
+  height: fit-content;
+  background-color: white;
+  box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01), 0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09), 0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 17px 17px 27px 27px;
+}
+
+.title {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  border-bottom: 1px solid #f1f1f1;
+  font-weight: 700;
+  font-size: 13px;
+  color: #47484b;
+}
+
+.title::after {
+  content: '';
+  width: 8ch;
+  height: 1px;
+  position: absolute;
+  bottom: -1px;
+  background-color: #47484b;
+}
+
+.comments {
+  display: grid;
+  grid-template-columns: 35px 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.comment-react {
+  width: 35px;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: auto;
+  margin: 0;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.comment-react button {
+  width: 35px;
+  height: 35px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+}
+
+.comment-react button:after {
+  content: '';
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: -2.5px;
+  top: -2.5px;
+  background-color: #f5356e;
+  border-radius: 50%;
+  z-index: 0;
+  transform: scale(0);
+}
+
+.comment-react button svg {
+  position: relative;
+  z-index: 9;
+}
+
+.comment-react button:hover:after {
+  animation: ripple 0.6s ease-in-out forwards;
+}
+
+.comment-react button:hover svg {
+  fill: #f5356e;
+}
+
+.comment-react button:hover svg path {
+  stroke: #f5356e;
+  fill: #f5356e;
+}
+
+.comment-react hr {
+  width: 80%;
+  height: 1px;
+  background-color: #dfe1e6;
+  margin: auto;
+  border: 0;
+}
+
+.comment-react span {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 13px;
+  font-weight: 600;
+  color: #707277;
+}
+
+.comment-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.comment-container .user {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 10px;
+}
+
+.comment-container .user .user-pic {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+}
+
+.comment-container .user .user-pic:after {
+  content: '';
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  border-radius: 50%;
+  background-color: #0fc45a;
+  border: 2px solid #ffffff;
+}
+
+.comment-container .user .user-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 3px;
+}
+
+.comment-container .user .user-info span {
+  font-weight: 700;
+  font-size: 12px;
+  color: #47484b;
+}
+
+.comment-container .user .user-info p {
+  font-weight: 600;
+  font-size: 10px;
+  color: #acaeb4;
+}
+
+.comment-container .comment-content {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #5f6064;
+}
+
+.text-box {
+  width: 1024px;
+  height: fit-content;
+  background-color: #f1f1f1;
+  padding: 8px;
+}
+
+.text-box .box-container {
+  background-color: #ffffff;
+  border-radius: 8px 8px 21px 21px;
+  padding: 8px;
+}
+
+.text-box textarea {
+  width: 990px;
+  height: 100px;
+  resize: none;
+  border: 0;
+  border-radius: 6px;
+  padding: 12px 12px 10px 12px;
+  font-size: 13px;
+  outline: none;
+  caret-color: #0a84ff;
+}
+
+.text-box .formatting {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto 1fr;
+}
+
+.text-box .formatting button {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 0;
+  outline: none;
+}
+
+.text-box .formatting button:hover {
+  background-color: #f1f1f1;
+}
+
+.text-box .formatting .send {
+  width: 30px;
+  height: 30px;
+  background-color: #0a84ff;
+  margin: 0 0 0 auto;
+}
+
+.text-box .formatting .send:hover {
+  background-color: #026eda;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}

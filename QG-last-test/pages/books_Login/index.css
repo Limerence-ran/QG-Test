@@ -71,9 +71,9 @@ body{
 }
 
 .message, .signin {
-  color: rgba(180, 171, 171, 0.822);
+  color: #e6e6e6;
   font-size: 14px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .signin {
@@ -98,6 +98,21 @@ form {
   margin: 60px auto;
 }
 
+form div{
+  position: relative;
+}
+
+.login_icon{
+  position: absolute;
+  top: 20px;
+  left: -30px;
+}
+
+form div input
+{
+  margin-left: 10px;
+}
+
 .lb {
   display: block;
   margin-bottom: 10px;
@@ -115,11 +130,13 @@ form {
   margin-bottom: 20px;
   background-color: #333333;
   color: white;
+  margin-top: 20px;
 }
 
 
-#send {
+.send {
   margin-top: 30px;
+  margin-left: 10px;
   --glow-color: rgb(176, 255, 189);
   --glow-spread-color: rgba(123, 255, 160, 0.781);
   --enhanced-glow-color: rgb(182, 175, 71);
@@ -140,7 +157,7 @@ form {
   transition: all 0.3s;
 }
 
-#send::after {
+.send::after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -154,7 +171,7 @@ form {
   transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
 }
 
-#send:hover {
+.send:hover {
   color: var(--btn-color);
   background-color: var(--glow-color);
   box-shadow: 0 0 1em .25em var(--glow-color),
@@ -162,13 +179,13 @@ form {
         inset 0 0 .75em .25em var(--glow-color);
 }
 
-#send:active {
+.send:active {
   box-shadow: 0 0 0.6em .25em var(--glow-color),
         0 0 2.5em 2em var(--glow-spread-color),
         inset 0 0 .5em .25em var(--glow-color);
 }
 
-#limpar {
+.limpar {
   --glow-color: rgb(255, 176, 176);
   --glow-spread-color: rgba(255, 123, 123, 0.781);
   --enhanced-glow-color: rgb(182, 175, 71);
@@ -188,9 +205,10 @@ form {
   text-shadow: 0 0 .5em var(--glow-color);
   position: relative;
   transition: all 0.3s;
+  margin-left: 90px;
 }
 
-#limpar::after {
+.limpar::after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -204,7 +222,7 @@ form {
   transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
 }
 
-#limpar:hover {
+.limpar:hover {
   color: var(--btn-color);
   background-color: var(--glow-color);
   box-shadow: 0 0 1em .25em var(--glow-color),
@@ -212,9 +230,12 @@ form {
         inset 0 0 .75em .25em var(--glow-color);
 }
 
-#limpar:active {
+.limpar:active {
   box-shadow: 0 0 0.6em .25em var(--glow-color),
         0 0 2.5em 2em var(--glow-spread-color),
         inset 0 0 .5em .25em var(--glow-color);
 }
 
+.reg-box{
+  display: none;
+}
