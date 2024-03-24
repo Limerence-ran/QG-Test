@@ -282,7 +282,7 @@ int Error(char *exp) //错误表达式判断
 void menu()
 {
     printf("\t\t--------------------------------------------\n");
-    printf("\t\t|             蒋卓然造的简陋计算器         |\n");
+    printf("\t\t|              jzr造的简陋计算器           |\n");
     printf("\t\t|              ----------------            |\n");
     printf("\t\t|              |      QG      |            |\n");
     printf("\t\t|              ----------------            |\n");
